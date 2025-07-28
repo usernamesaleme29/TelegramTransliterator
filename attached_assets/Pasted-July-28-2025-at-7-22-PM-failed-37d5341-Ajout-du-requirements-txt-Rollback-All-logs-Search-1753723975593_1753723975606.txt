@@ -1,0 +1,43 @@
+July 28, 2025 at 7:22 PM
+failed
+37d5341
+Ajout du requirements.txt
+
+Rollback
+
+All logs
+Search
+Search
+
+Live tail
+GMT+2
+
+Menu
+
+==> Deploying...
+==> Running 'python main.py'
+2025-07-28 17:28:01,388 - __main__ - INFO - Starting Telegram transliteration bot...
+2025-07-28 17:28:01,389 - __main__ - INFO - Keep-alive server started
+2025-07-28 17:28:01,389 - config - INFO - Found Telegram token in TELEGRAM_TOKEN
+2025-07-28 17:28:01,389 - config - WARNING - Token doesn't start with 'bot', but proceeding...
+2025-07-28 17:28:01,389 - config - INFO - Configuration validated - Max message length: 4096
+2025-07-28 17:28:01,389 - config - INFO - Configuration loaded successfully
+2025-07-28 17:28:01,389 - transliterator - INFO - Transliterator initialized with visual correspondence table
+2025-07-28 17:28:01,477 - keep_alive - INFO - Keep-alive server started on port 5000
+2025-07-28 17:28:01,674 - keep_alive - INFO - Keep-alive server: code 501, message Unsupported method ('HEAD')
+2025-07-28 17:28:01,675 - keep_alive - INFO - Keep-alive server: "HEAD / HTTP/1.1" 501 -
+2025-07-28 17:28:01,875 - bot - ERROR - Error starting bot: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes
+2025-07-28 17:28:01,875 - __main__ - ERROR - Critical error in main: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes
+==> Exited with status 1
+==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+==> Running 'python main.py'
+2025-07-28 17:28:12,402 - __main__ - INFO - Starting Telegram transliteration bot...
+2025-07-28 17:28:12,488 - __main__ - INFO - Keep-alive server started
+2025-07-28 17:28:12,489 - config - INFO - Found Telegram token in TELEGRAM_TOKEN
+2025-07-28 17:28:12,489 - config - WARNING - Token doesn't start with 'bot', but proceeding...
+2025-07-28 17:28:12,489 - config - INFO - Configuration validated - Max message length: 4096
+2025-07-28 17:28:12,489 - config - INFO - Configuration loaded successfully
+2025-07-28 17:28:12,489 - transliterator - INFO - Transliterator initialized with visual correspondence table
+2025-07-28 17:28:12,491 - keep_alive - INFO - Keep-alive server started on port 5000
+2025-07-28 17:28:12,800 - bot - ERROR - Error starting bot: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes
+2025-07-28 17:28:12,800 - __main__ - ERROR - Critical error in main: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes
