@@ -87,6 +87,7 @@ The application follows a modular architecture with clear separation of concerns
 
 ## Changelog
 
+- July 28, 2025. Ajout des fichiers de déploiement pour Render
 - July 07, 2025. Initial setup
 
 ## User Preferences
