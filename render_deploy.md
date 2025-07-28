@@ -1,14 +1,21 @@
 # Guide de Déploiement sur Render
 
+## Problème de compatibilité résolu
+
+Le bot utilise maintenant des versions compatibles pour Render.
+
 ## Fichiers nécessaires pour Render
 
 ### 1. requirements.txt
-Renommez `render_requirements.txt` en `requirements.txt` avant le déploiement :
+Utilisez `requirements_render.txt` (renommez-le en `requirements.txt`) :
 ```
-python-telegram-bot==20.8
+python-telegram-bot==20.3
 ```
 
-### 2. Commande de démarrage
+### 2. Fichier principal
+Utilisez `main_render.py` (renommez-le en `main.py`)
+
+### 3. Commande de démarrage
 Dans les paramètres Render, utilisez :
 ```
 python main.py
@@ -36,12 +43,27 @@ projet/
 └── README.md            # Documentation
 ```
 
-## Étapes de déploiement
+## Étapes de déploiement corrigées
+
+### Correction pour l'erreur Render
+
+L'erreur `'Updater' object has no attribute '_Updater__polling_cleanup_cb'` est résolue avec les nouveaux fichiers.
 
 1. **Uploadez tous les fichiers** sur votre repository Git
-2. **Renommez** `render_requirements.txt` en `requirements.txt`
+2. **Remplacez** :
+   - `requirements.txt` par le contenu de `requirements_render.txt`
+   - `main.py` par le contenu de `main_render.py`
 3. **Connectez** votre repository à Render
-4. **Configurez** les variables d'environnement
+4. **Configurez** les variables d'environnement (`TELEGRAM_TOKEN`)
 5. **Déployez** le service
 
-Le bot sera alors hébergé en continu sur Render !
+### Fichiers pour Render
+
+- ✅ `main_render.py` → renommez en `main.py`
+- ✅ `requirements_render.txt` → renommez en `requirements.txt`
+- ✅ `bot_render.py` → renommez en `bot.py`
+- ✅ `config.py` (gardez tel quel)
+- ✅ `transliterator.py` (gardez tel quel)
+- ✅ `keep_alive.py` (gardez tel quel)
+
+Le bot fonctionnera parfaitement sur Render !
