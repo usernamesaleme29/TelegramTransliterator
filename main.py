@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Main entry point for the Telegram transliteration bot.
-This file starts the bot and keeps it running.
+Render-compatible version.
 """
 
 import logging
@@ -16,8 +16,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO,
     handlers=[
-        logging.StreamHandler(sys.stdout),
-        logging.FileHandler('bot.log')
+        logging.StreamHandler(sys.stdout)
     ]
 )
 
